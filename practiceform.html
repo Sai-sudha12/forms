@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sample form</title></head>
+    <body>
+        <fieldset>
+        <form>
+            <h2>Welcome pls fill the form</h2>
+            <hr>
+            <h3>Text box</h3>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter the name" pattern="[a-zA-Z]{3,12}" title="user pls enter the name" required>
+            
+            
+            <h3>Number box:</h3>
+            <label>Age:</label>
+            <input type="number" min="12" max="21" >
+            <p>1.Age should be of minimum 12</p>
+            <p>2.Age should be of maximum 21</p>
+            
+            <h3>Phone number box:</h3>
+            <label>Phone number</label>
+            <input type="text" pattern="^[6-9]{1}[0-9]{9}$" required title="Numbers should be in btw 0-9" placeholder="Enter a valid phone number">
+            
+            <h3>Emailbox:</h3>
+            <label>Email:</label>
+            <input type="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-z]{2,3}" title="Invalid mail" placeholder="Enter a valid mail">
+            <h3> check box:</h3>
+            <label>Technical skills:</label>
+            <br>
+            <input type="checkbox" >java <br>
+            <input type="checkbox" >python <br>
+            <input type="checkbox" >SQL <br>
+            <input type="checkbox" >HTML <br>
+            
+            <h3>Select box/ dropdown menu</h3>
+            <label>select city:</label>
+            <select>
+                <option>Select</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+            </select>
+            <h3>Radio button</h3>
+            <label>Gender:</label> <br>
+            <input type="radio" name="gender"> female
+            <input type="radio" name="gender"> male
+            <input type="radio" name="gemder"> other
+            
+            <h3>Upload button</h3>
+            <label>Choose a file:</label>
+            <input type="file">
+            
+            <h3>Textarea</h3>
+            <textarea  required title="Invalid data" > </textarea>
+            
+            <h3>Calender</h3>
+            <label>Date of birth:</label>
+            <input type="date" min="1990-01-01" max="2023-12-31">
+            
+            <h3>Reset button</h3>
+            <input type="reset">
+        
+            <h3>Color pallet</h3>
+            <input type="color">
+            
+            <h3>Range button</h3>
+            <input type="range">
+            
+            <h3>Search box</h3>
+            <input type="search">
+            
+            <br> <br>
+            <input type="submit">
+            
+            
+        
+        </form>
+            </fieldset>
+    </body>
+
+</html>
